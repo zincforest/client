@@ -55,36 +55,7 @@
     "sortablejs": "^1.10.2",
     "styled-components": "^5.3.3",
     "ts-dedent": "^2.0.0",
-    "uuid": "^8.3.2"
-  },
-  "scripts": {
-    "prepare": "tsc --emitDeclarationOnly --declaration --declarationDir ./declarations",
-    "test": "exit 0",
-    "lint": "eslint .",
-    "format": "prettier --write .",
-    "start": "webpack-dev-server --mode development --hot",
-    "build": "webpack --mode production",
-    "clean": "del-cli dist node_modules declarations public/contracts",
-    "docs": "typedoc && yarn format",
-    "deploy": "netlify build && netlify deploy",
-    "deploy:prod": "netlify build && netlify deploy --prod"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "engines": {
-    "node": ">=16"
-  },
-  "devDependencies": {
+    "uuid": "^8.3.2",
     "@types/animejs": "^3.1.3",
     "@types/color": "^3.0.2",
     "@types/gl-matrix": "^3.2.0",
@@ -119,5 +90,32 @@
     "webpack-bundle-analyzer": "^4.5.0",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.4.0"
+  },
+  "scripts": {
+    "prepare": "tsc --emitDeclarationOnly --declaration --declarationDir ./declarations",
+    "test": "exit 0",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "start": "webpack-dev-server --mode development --hot",
+    "build": "webpack --mode production",
+    "clean": "del-cli dist node_modules declarations public/contracts",
+    "docs": "typedoc && yarn format",
+    "deploy": "netlify build && netlify deploy",
+    "deploy:prod": "netlify build && netlify deploy --prod"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "engines": {
+    "node": ">=16"
   }
 }
